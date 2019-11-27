@@ -6,7 +6,7 @@ paired_bets_file = 'file path/Paired\ Bets.csv'
 paired_bets_file = paired_bets_file.replace("\\", "")
 paired_bets = pd.read_csv(paired_bets_file)
 
-individual_bets_file = 'file_path/Individual\ Bets.csv'
+individual_bets_file = 'file path/Individual\ Bets.csv'
 individual_bets_file = individual_bets_file.replace("\\", "")
 individual_bets = pd.read_csv(individual_bets_file)
 
