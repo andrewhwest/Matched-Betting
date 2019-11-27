@@ -16,7 +16,7 @@ individual_bets.drop(['BookieID', 'BetOutcomeID', 'BettingTypeID', 'ItemID'], ax
 
 
 # Rename first column of individual_bets to match first column of paired_bets
-individual_bets.rename(columns = {'profitid':'ProfitID'}, inplace=True)
+individual_bets.rename(columns={'profitid':'ProfitID'}, inplace=True)
 
 
 # Take columns from paired_bets and merge to individual_bets on matching ProfitIDs
