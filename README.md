@@ -8,16 +8,16 @@ Suppose we place 2 bets on a football game.
 1. Real Madrid to win  
 2. Real Madrid not to win (draw or lose)  
   
-One of these bets is guaranteed to win but bookmakers set the odds so that we will make a loss, regardless of which bet wins. 
+One of these bets is guaranteed to win but bookmakers set the odds so that we will make a loss overall, regardless of which bet wins. 
   
 With matched betting, we place these two bets but the first bet is placed using a free bet.   
-There are two scenarios:  
+There are two possible scenarios:  
   
 1. Our free bet wins and we lose some money on the second bet  
 2. The second bet wins and we lose no money from the free bet  
   
-A calculation is made so that the free bet wins more money than the second bet loses, ensuring that the first scenario always makes a profit.  
-The second scenario always makes a profit as no money is lost.  
+Scenario 1: A calculation is made so that the free bet wins more money than the second bet loses, ensuring that we make a profit.  
+Scenario 2: We make a profit as no money is lost.  
   
 What's the catch?  
 Matched betting is time consuming and can be hard to keep track of when you're placing multiple bets per day.
