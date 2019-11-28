@@ -23,6 +23,7 @@ first scenario always makes a profit.
 The second scenario always makes a profit as no money is lost.  
   
 What's the catch?  
+  
 Matched betting is time consuming and can be hard to keep track of when you're placing multiple  
 bets per day.
   
