@@ -36,7 +36,7 @@ Instead the main aims of this project are to:
   
 ## To do
 1. <s>Make a new spreadsheet from the two existing ones</s>
-2. Add in some missing bets  
+2. <s>Add in some missing bets</s>  
 3. Add new features to spreadsheet, account for unexpected changes in profit  
 4. Update spreadsheet with new bets  
 5. Try to automate the process of keeping track of which bets have settled
