@@ -2,15 +2,13 @@
 Create a spreadsheet and dataframe to keep track of matched betting
 
 ## Matched-Betting explained
-Matched betting is a risk-free betting technique that uses free bets offered by  
-bookmakers to place bets that will always make a profit.  
+Matched betting is a risk-free betting technique that uses free bets offered by bookmakers to place bets that will always make a profit.  
   
 Suppose we place 2 bets on a football game.   
 1. Real Madrid to win  
 2. Real Madrid not to win (draw or lose)  
   
-One of these bets is guaranteed to win but bookmakers set the odds so that we will make a 
-loss, regardless of which bet wins.  
+One of these bets is guaranteed to win but bookmakers set the odds so that we will make a loss, regardless of which bet wins. 
   
 With matched betting, we place these two bets but the first bet is placed using a free bet.   
 There are two scenarios:  
@@ -18,8 +16,7 @@ There are two scenarios:
 1. Our free bet wins and we lose some money on the second bet  
 2. The second bet wins and we lose no money from the free bet  
   
-A calculation is made so that the free bet wins more money than the second bet loses, ensuring that the   
-first scenario always makes a profit.  
+A calculation is made so that the free bet wins more money than the second bet loses, ensuring that the first scenario always makes a profit.  
 The second scenario always makes a profit as no money is lost.  
   
 What's the catch?  
@@ -29,8 +26,7 @@ bets per day.
   
 
 ## Motivation for project
-I originally intended to find a way to collect odds from bookmakers and create a calculator  
-to determine which events to bet on and how much to bet.  
+I originally intended to find a way to collect odds from bookmakers and create a calculator to determine which events to bet on and how much to bet.  
   
 However, it turns out that there are already several websites that do an excellent job of this.  
   
