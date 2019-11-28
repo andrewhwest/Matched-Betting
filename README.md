@@ -1,4 +1,4 @@
-#Matched betting  
+# Matched betting  
 Create a spreadsheet and dataframe to keep track of matched betting
 
 ## Matched-Betting explained
@@ -40,7 +40,7 @@ Instead the main aims of this project are to:
 •Have a clear and well organised spreadsheet that can be used for future data analysis  
   
 ## To do
-1. <s>Make a new spreadsheet from the two existing ones<s>
+1. <s>Make a new spreadsheet from the two existing ones</s>
 2. Add in some missing bets and account for unexpected changes in profit  
 3. Add new features to spreadsheet  
 4. Update spreadsheet with new bets  
