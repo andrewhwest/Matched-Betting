@@ -1,5 +1,5 @@
 # Matched betting  
-Create a spreadsheet and dataframe to keep track of matched betting
+A spreadsheet/dataframe to keep track of matched betting
 
 ## Matched-Betting explained
 Matched betting is a risk-free betting technique that uses free bets offered by bookmakers to place bets that will always make a profit.  
