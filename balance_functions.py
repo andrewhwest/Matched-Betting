@@ -1,11 +1,14 @@
-def qualifying_bet_balances():
+"""These are functions that were made in part 3 to keep track of money across
+   various accounts with bookmakers."""
+
+def qualifying_bet_balances(spreadsheet):
     """Returns a series with the balance for each bookie due to all 
        settled qualifying bets."""
     
-    winning_qualifying_bets = (bet_spreadsheet['Bet Type'] == 'Qualifying')   \
-                               & (bet_spreadsheet['Bet Result'] == 'Win')
+    winning_qualifying_bets = (spreadsheet['Bet Type'] == 'Qualifying')   \
+                               & (spreadsheet['Bet Result'] == 'Win')
     
-    qualifying_by_bookie = bet_spreadsheet[winning_qualifying_bets].groupby('Bookie') 
+    qualifying_by_bookie = spreadsheet[winning_qualifying_bets].groupby('Bookie') 
     
     # Our original stake is returned with qualifying bets
     qualifying_balances = qualifying_by_bookie['Stake'].sum()   \
@@ -17,14 +20,15 @@ def qualifying_bet_balances():
         
     return qualifying_balances
 
-def free_bet_balances():
+
+def free_bet_balances(spreadsheet):
     """Returns a series with the balance for each bookie due to all 
        settled free bets."""
 
-    winning_free_bets = (bet_spreadsheet['Bet Type'] == 'Free (SNR)') \
-                               & (bet_spreadsheet['Bet Result'] == 'Win')
+    winning_free_bets = (spreadsheet['Bet Type'] == 'Free (SNR)') \
+                               & (spreadsheet['Bet Result'] == 'Win')
     
-    free_by_bookie = bet_spreadsheet[winning_free_bets].groupby('Bookie')
+    free_by_bookie = spreadsheet[winning_free_bets].groupby('Bookie')
     
     # Our original state is not returned with free bets
     # SNR means "stake not returned"
@@ -49,10 +53,10 @@ def add_series(series_1, series_2):
     return removed_NaN_sum
 
 
-def bookie_balances():
+def bookie_balances(spreadsheet):
     """Returns the total balance for each bookmaker for all settled bets."""
     
-    return add_series(qualifying_bet_balances(), free_bet_balances())
+    return add_series(qualifying_bet_balances(spreadsheet), free_bet_balances(spreadsheet))
 
 
 def value_index_list(series):

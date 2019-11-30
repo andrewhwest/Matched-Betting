@@ -1,6 +1,7 @@
-"""Create new columns and functions that can be used on spreadsheet."""
+"""Add profit to spreadsheet and keep track of money across various bookmaker accounts"""
 
 import pandas as pd
+from balance_functions import *
 
 
 bet_spreadsheet = pd.read_csv('Bet Spreadsheet with missing bets added.csv')
@@ -32,3 +33,6 @@ bet_spreadsheet.iloc[:, -3] = bet_spreadsheet.iloc[:, -3].apply(lambda x : abs(x
 # Add Running Profit as a column
 column_after_Profit = column_after_Bet_Result + 1 
 bet_spreadsheet.insert(column_after_Profit, 'Running Profit', bet_spreadsheet['Profit'].cumsum())
+
+# Save changes
+bet_spreadsheet.to_csv('Bet Spreadsheet with profit features.csv', index=False)
