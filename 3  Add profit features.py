@@ -34,5 +34,8 @@ bet_spreadsheet.iloc[:, -3] = bet_spreadsheet.iloc[:, -3].apply(lambda x : abs(x
 column_after_Profit = column_after_Bet_Result + 1 
 bet_spreadsheet.insert(column_after_Profit, 'Running Profit', bet_spreadsheet['Profit'].cumsum())
 
+# Show balances for each bookmaker
+bookie_balances(bet_spreadsheet)
+
 # Save changes
 bet_spreadsheet.to_csv('Bet Spreadsheet with profit features.csv', index=False)
