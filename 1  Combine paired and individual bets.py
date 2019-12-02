@@ -9,6 +9,7 @@
 """
 
 import pandas as pd
+from processing_functions import *
 
 
 # Read csv files
@@ -20,49 +21,27 @@ individual_bets_file = 'file path.../Individual\ Bets.csv'
 individual_bets_file = individual_bets_file.replace("\\", "")
 individual_bets = pd.read_csv(individual_bets_file)
 
-##Combine columns from both dataframes
+# Combine paired and individual spreadsheets
 
-# Remove unwanted columns from individual_bets
-individual_bets.drop(['BookieID', 'BetOutcomeID', 'BettingTypeID', 'ItemID'], axis=1, inplace=True)
+individual_bets = remove_wanted_columns(individual_bets)
 
-# Rename first column of individual_bets to match first column of paired_bets
-individual_bets.rename(columns={'profitid':'ProfitID'}, inplace=True)
+individual_bets = tidy_profit_id(individual_bets)
 
-# Take columns from paired_bets and merge to individual_bets on matching ProfitIDs
-bet_spreadsheet = individual_bets
-
-for column in ['sport', 'Event', 'EventTime', 'datecreated ', 'BetType', 'Note']:
-    partially_merged = pd.merge(bet_spreadsheet, paired_bets.loc[:,['ProfitID',column]], 
-                                on='ProfitID')
-    bet_spreadsheet = partially_merged
+bet_spreadsheet = merge_on_profit_id(individual_bets, paired_bets)
   
-# Rename columns
-bet_spreadsheet.columns = ['Profit ID', 'Bookie', 'Bet Result', 'Type', 'Outcome', 'Stake',
-                           'Odds', 'Fee (%)', 'Liability', 'Return', 'Potential Profit', 
-                           'Sport', 'Event', 'Event Time', 'Date Created', 'Bet Type', 'Note']
+# Better organise and tidy up the newly combined spreadsheet.
 
-# Change order of columns
-columns_reordered = ['Date Created', 'Sport', 'Event', 'Event Time', 'Bookie','Bet Type',
-                     'Type', 'Outcome', 'Stake', 'Odds', 'Fee (%)', 'Liability', 'Return',
-                     'Potential Profit', 'Bet Result', 'Note', 'Profit ID']
+bet_spreadsheet = rename_colums(bet_spreadsheet)
 
-bet_spreadsheet = bet_spreadsheet.loc[:, columns_reordered]
+bet_spreadsheet = reorder_columns(bet_spreadsheet)
 
-## Update bet results and tidy up some columns
+bet_spreadsheet = rename_type_normal(bet_spreadsheet)
 
-# Add which bets won and lost
-win_index = [0,2,5,6,9,10,13,15]
-lose_index = list(set(range(16)) - set(win_index))
+bet_spreadsheet = fill_note_NaN(bet_spreadsheet)
 
-bet_spreadsheet.loc[win_index,'Bet Result'] = "Win"
-bet_spreadsheet.loc[lose_index,"Bet Result"] = "Lose"
+# Update bet results
 
-# Use the term 'Qualifying' instead of 'Normal'
-bet_spreadsheet.loc[:,'Bet Type'].replace('Normal', 'Qualifying', inplace=True)
-
-#Replace NaNs in notes with empty strings
-bet_spreadsheet.fillna('', inplace=True)
-
+bet_spreadsheet = update_bet_results(bet_spreadsheet, [0,2,5,6,9,10,13,15])
 
 # Save new spreadsheet
 bet_spreadsheet.to_csv('Bet Spreadsheet.csv', index=False)
