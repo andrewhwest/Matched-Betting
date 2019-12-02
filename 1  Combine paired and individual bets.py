@@ -22,25 +22,17 @@ individual_bets_file = individual_bets_file.replace("\\", "")
 individual_bets = pd.read_csv(individual_bets_file)
 
 # Combine paired and individual spreadsheets
-
 individual_bets = remove_wanted_columns(individual_bets)
-
 individual_bets = tidy_profit_id(individual_bets)
-
 bet_spreadsheet = merge_on_profit_id(individual_bets, paired_bets)
   
 # Better organise and tidy up the newly combined spreadsheet.
-
 bet_spreadsheet = rename_colums(bet_spreadsheet)
-
 bet_spreadsheet = reorder_columns(bet_spreadsheet)
-
 bet_spreadsheet = rename_type_normal(bet_spreadsheet)
-
 bet_spreadsheet = fill_note_NaN(bet_spreadsheet)
 
 # Update bet results
-
 bet_spreadsheet = update_bet_results(bet_spreadsheet, [0,2,5,6,9,10,13,15])
 
 # Save new spreadsheet
