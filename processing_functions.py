@@ -76,7 +76,7 @@ def rename_type_normal(spreadsheet):
 def fill_note_NaN(spreadsheet):
     """Replace NaNs in notes with blank space."""
     
-    spreadsheet.fillna(' ', inplace=True)
+    spreadsheet.loc[:, 'Note'].fillna(' ', inplace=True)
     
     return spreadsheet
 
