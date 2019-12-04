@@ -13,13 +13,8 @@ from processing_functions import *
 
 
 # Read csv files
-paired_bets_file = 'file path.../Paired\ Bets.csv'
-paired_bets_file = paired_bets_file.replace("\\", "")
-paired_bets = pd.read_csv(paired_bets_file)
-
-individual_bets_file = 'file path.../Individual\ Bets.csv'
-individual_bets_file = individual_bets_file.replace("\\", "")
-individual_bets = pd.read_csv(individual_bets_file)
+paired_bets = pd.read_csv('Paired bets.csv')
+individual_bets = pd.read_csv('Individual bets.csv')
 
 # Combine paired and individual spreadsheets
 individual_bets = remove_wanted_columns(individual_bets)
@@ -33,7 +28,7 @@ bet_spreadsheet = rename_type_normal(bet_spreadsheet)
 bet_spreadsheet = fill_note_NaN(bet_spreadsheet)
 
 # Update bet results
-bet_spreadsheet = update_bet_results(bet_spreadsheet, [0,2,5,6,9,10,13,15])
+bet_spreadsheet = update_bet_results(bet_spreadsheet, [1,2,5,6,9,10,13,15])
 
 # Save new spreadsheet
 bet_spreadsheet.to_csv('Bet Spreadsheet.csv', index=False)

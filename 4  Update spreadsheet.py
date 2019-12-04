@@ -15,9 +15,7 @@ old_bet_spreadsheet = pd.read_csv('Bet Spreadsheet with profit features.csv')
 ## Separate new individual bets from old
 
 # Updated files contain old and new bets
-updated_individual_bets_file = '/Users/Drew/Documents/Python/Matched\ Betting/Updated\ individual\ bets.csv'
-updated_individual_bets_file = updated_individual_bets_file.replace("\\", "")
-updated_individual_bets = pd.read_csv(updated_individual_bets_file)
+updated_individual_bets = pd.read_csv('Updated individual bets.csv')
 
 # Remove a rare bet that was causing problems
 updated_individual_bets = remove_individual_bet(updated_individual_bets)
@@ -29,9 +27,7 @@ new_individual_bets = new_individual_spreadsheet(old_bet_spreadsheet, updated_in
 ## Separate new paired bets from old
 
 # Updated files contain old and new bets
-updated_paired_bets_file = '/Users/Drew/Documents/Python/Matched\ Betting/Updated\ paired\ bets.csv'
-updated_paired_bets_file = updated_paired_bets_file.replace("\\", "")
-updated_paired_bets = pd.read_csv(updated_paired_bets_file)
+updated_paired_bets = pd.read_csv('Updated paired bets.csv')
 
 # Remove a rare bet that was causing problems
 updated_paired_bets = remove_paired_bet(updated_paired_bets)
