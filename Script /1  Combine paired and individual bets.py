@@ -1,6 +1,6 @@
 """Combines two spreadsheets to make a new master spreadsheet.
 
-   A website I use for matched betting provides two speadsheets.
+   A website I use for matched betting (www.oddsmonkey.com) provides two speadsheets.
    The first one contains information for each individual bet placed.
    The second gives a summary for each pair of bets that were placed on the same
    sporting event.
