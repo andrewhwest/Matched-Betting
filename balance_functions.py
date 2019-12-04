@@ -1,5 +1,52 @@
-"""These are functions that were made in part 3 to keep track of money across
-   various accounts with bookmakers."""
+"""Functions that were made during part 3 to calculate profit and keep track of balances
+   across various bookmakers accounts."""
+
+import pandas as pd
+
+
+# Functions to calculate profit
+
+def add_profit_column(spreadsheet):
+    """Creates a profit column to the right of bet result.
+    
+       All values are initialised to 0.00."""
+     
+    column_after_bet_result = spreadsheet.columns.get_loc('Bet Result') + 1
+    spreadsheet.insert(column_after_bet_result, 'Profit', 0.00)
+    
+    return spreadsheet
+
+
+def calculate_profit(spreadsheet):
+    """Calculates profit based on bet results."""
+    
+    win_lose_boolean = (spreadsheet['Bet Result'] == 'Win')
+    bet_profit = spreadsheet['Potential Profit'] * win_lose_boolean
+    spreadsheet.loc[:, 'Profit'] = bet_profit
+    
+    return spreadsheet
+
+
+def remove_negative_zeros(spreadsheet):
+    """Removes the -0.00 from profit column."""
+    
+    remove_minus = lambda x : abs(x) if (x == -0.00) else x
+    spreadsheet.iloc[:, -3] = spreadsheet.iloc[:, -3].apply(remove_minus)
+    
+    return spreadsheet
+
+
+def running_profit(spreadsheet):
+    """Adds a running profit column to the right of profit."""
+    
+    column_after_profit = spreadsheet.columns.get_loc('Profit') + 1
+    spreadsheet.insert(column_after_profit, 'Running Profit', 
+                           spreadsheet['Profit'].cumsum())
+    
+    return spreadsheet
+
+
+# Functions to calculate balances for each bookmaker
 
 def qualifying_bet_balances(spreadsheet):
     """Returns a series with the balance for each bookie due to all 

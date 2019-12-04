@@ -83,24 +83,32 @@ def fill_note_NaN(spreadsheet):
 
 def win_lose_indices(winning_indices_list):
     """Input a list of indices of winning bets.
-       Returns a tuple (list 1, list2).
+       Returns a tuple (list 1, list2, list3).
     
        list 1: indices of winning bets
        list 2: indices of subsequent losing bets
+       list 3: indices of winning and losing bets
        
-       If the largest winning index is even, then its paired bet (the proceeding index) 
+       If the smallest winning index is odd, then its paired bet (the preceeding index), 
+       will be that of a losing bet and must be included in the losing index list.
+       
+       If the largest winning index is even, then its paired bet (the proceeding index), 
        will be that of a losing bet and must be included in the losing index list."""
     
-    if max(winning_indices_list) % 2 == 0:
-        bets_to_be_updated = range(min(winning_indices_list), 
-                                   max(winning_indices_list)+2)
+    if min(winning_indices_list) % 2 == 0:
+        range_min = min(winning_indices_list)
     else:
-        bets_to_be_updated = range(min(winning_indices_list), 
-                                   max(winning_indices_list)+1)
+        range_min = min(winning_indices_list) - 1
     
+    if max(winning_indices_list) % 2 == 0:
+        range_max = max(winning_indices_list) + 2
+    else:
+        range_max = max(winning_indices_list) + 1
+    
+    bets_to_be_updated = range(range_min, range_max)
     losing_indices_list = list(set(bets_to_be_updated) - set(winning_indices_list))
     
-    return (winning_indices_list, losing_indices_list)
+    return (winning_indices_list, losing_indices_list, list(bets_to_be_updated))
 
 
 def update_bet_results(spreadsheet, winning_indices_list):
