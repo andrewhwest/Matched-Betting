@@ -69,6 +69,7 @@ bet_spreadsheet = update_bet_results(bet_spreadsheet, win_list)
 newly_settled_bets_list = win_lose_indices(win_list)[2]
 newly_settled_bets = bet_spreadsheet.loc[newly_settled_bets_list]
 bet_spreadsheet.loc[newly_settled_bets_list] = calculate_profit(newly_settled_bets)
+bet_spreadsheet.loc[newly_settled_bets_list] = remove_negative_zeros(newly_settled_bets)
 
 # Check bookie balances for settled bets
 bookie_balances(bet_spreadsheet.loc[newly_settled_bets_list])
