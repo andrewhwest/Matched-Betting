@@ -1,0 +1,10 @@
+"ProfitID","StatusId","Status","BetTypeID","BetType","sportID","sport","SourceID","Source","MarketID","Market","Market1","EventTime","Event","BetOutcome","ExpectedProfitAve","ActualProfit","Note","datecreated" 
+"7967346","1","Unsettled","2","Free (SNR)","2","Football","1","Odds","1","Win","Win","19/11/2019 19:45:00","Wales v Hungary","Hungary","15.9100","0.0000","","19/11/2019 14:39:18" 
+"7967454","1","Unsettled","1","Normal","2","Football","1","Odds","1","Win","Win","19/11/2019 19:45:00","North Macedonia v Israel","North Macedonia","-0.3350","0.0000","","19/11/2019 14:56:02" 
+"7975857","1","Unsettled","2","Free (SNR)","2","Football","1","Odds","2","CS","CS","20/11/2019 19:45:00","Lincoln v Ipswich","1-2","15.0900","0.0000","","20/11/2019 14:13:10" 
+"7979780","1","Unsettled","1","Normal","2","Football","1","Odds","1","Win","Win","22/11/2019 20:00:00","Levante v Mallorca","Levante","-0.3600","0.0000","","20/11/2019 22:11:55" 
+"7979843","1","Unsettled","2","Free (SNR)","1","Horse Racing","1","Odds","5","Win","Win","21/11/2019 14:05:00","Market Rasen 14:05","Buster Valentine","22.3300","0.0000","odds changed in smarkets, liability was 118,
+lay bet loss, profit = 150 -118 = 32","20/11/2019 22:20:56" 
+"7987409","1","Unsettled","1","Normal","2","Football","1","Odds","1","Win","Win","22/11/2019 20:00:00","Levante v Mallorca","Levante","-1.0650","0.0000","","21/11/2019 21:24:34" 
+"7998004","1","Unsettled","2","Free (SNR)","2","Football","1","Odds","1","Win","Win","23/11/2019 12:30:00","West Ham v Tottenham","Draw","21.4750","0.0000","","22/11/2019 22:16:02" 
+"8018379","1","Unsettled","2","Free (SNR)","2","Football","1","Odds","2","CS","CS","24/11/2019 16:30:00","Sheff Utd v Man Utd","1-1","21.3250","0.0000","","24/11/2019 09:55:09" 
