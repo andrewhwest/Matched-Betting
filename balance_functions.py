@@ -30,8 +30,8 @@ def calculate_profit(spreadsheet):
 def remove_negative_zeros(spreadsheet):
     """Removes the -0.00 from profit column."""
     
-    remove_minus = lambda x : abs(x) if (x == -0.00) else x
-    spreadsheet.iloc[:, -3] = spreadsheet.iloc[:, -3].apply(remove_minus)
+    remove_minus = lambda profit : abs(profit) if (profit == -0.00) else profit
+    spreadsheet.loc[:, 'Profit'] = spreadsheet.loc[:, 'Profit'].apply(remove_minus)
     
     return spreadsheet
 
