@@ -1,4 +1,3 @@
-  
 "profitid","ItemID","BookieID","bookiename","BetOutcomeID","BetOutcome","BettingTypeID","bettingtype","Outcome","stake","Odds","commission","liability","return","profit" 
 "7967346","17692115","32","Coral","0","","1","Back","Hungary","20.0000","6.5","0","0.0000","110.0000","15.9200" 
 "7967346","17692116","100","Smarkets","0","","2","Lay","Hungary","16.2200","6.8","2","94.0800","15.9000","15.9000" 
