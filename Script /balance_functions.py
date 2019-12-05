@@ -1,4 +1,4 @@
-"""Functions that were made during part 3 to calculate profit and keep track of balances
+"""Functions that were made during parts 3 and 4 to calculate profit and keep track of balances
    across various bookmakers accounts."""
 
 import pandas as pd
