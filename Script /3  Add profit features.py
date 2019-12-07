@@ -17,6 +17,9 @@ bet_spreadsheet.loc[[12,13], 'Note'] = '''Liability changed last minute to 118.0
 # Update profit based on note 
 bet_spreadsheet.loc[[12,13], 'Profit'] = 31.99
 
+# Update liability based on note
+bet_spreadsheet.loc[13, 'Liability'] = 118.01
+
 # £10 of losses was refunded by smarkets as part of a promotion
 bet_spreadsheet.loc[[2,3], 'Note'] = '2.67 of losses from exchange refunded'
 bet_spreadsheet.loc[2, 'Profit'] = 2.57

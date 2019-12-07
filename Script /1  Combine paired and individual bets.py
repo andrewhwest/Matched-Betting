@@ -1,6 +1,6 @@
 """Combines two spreadsheets to make a new master spreadsheet.
 
-   A website I use for matched betting provides two speadsheets.
+   A website I use for matched betting (www.oddsmonkey.com) provides two speadsheets.
    The first one contains information for each individual bet placed.
    The second gives a summary for each pair of bets that were placed on the same
    sporting event.
@@ -28,7 +28,7 @@ bet_spreadsheet = rename_type_normal(bet_spreadsheet)
 bet_spreadsheet = fill_note_NaN(bet_spreadsheet)
 
 # Update bet results
-bet_spreadsheet = update_bet_results(bet_spreadsheet, [1,2,5,6,9,10,13,15])
+bet_spreadsheet = update_bet_results(bet_spreadsheet, [1,2,5,6,8,10,13,15])
 
 # Save new spreadsheet
 bet_spreadsheet.to_csv('Bet Spreadsheet.csv', index=False)

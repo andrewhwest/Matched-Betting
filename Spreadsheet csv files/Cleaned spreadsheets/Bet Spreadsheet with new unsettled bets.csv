@@ -11,9 +11,9 @@ Date Created,Sport,Event,Event Time,Bookie,Bet Type,Type,Outcome,Stake,Odds,Fee 
 20/11/2019 14:13:10 ,Football,Lincoln v Ipswich,20/11/2019 19:45:00,Smarkets,Free (SNR),Lay,1-2,15.41,13.0,2,184.92,15.1,15.1,Win,15.1,40.13, ,7975857
 20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,William Hill,Qualifying,Back,Levante,10.0,1.85,0,0.0,8.5,-0.36,Win,-0.36,39.77, ,7979780
 20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,9.84,1.9,2,8.86,9.64,-0.36,Lose,0.0,39.77, ,7979780
-20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,William Hill,Free (SNR),Back,Buster Valentine,30.0,6.0,0,0.0,150.0,22.32,Lose,31.99,71.76,"Liability changed last minute to 118.01, 
+20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,William Hill,Free (SNR),Back,Buster Valentine,30.0,6.0,0,0.0,150.0,22.32,Win,31.99,71.76,"Liability changed last minute to 118.01, 
                                         stake to 21.07, back bet won, profit=150-118.01",7979843
-20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,Smarkets,Free (SNR),Lay,Buster Valentine,22.8,6.6,2,127.68,22.34,22.34,Win,31.99,103.75,"Liability changed last minute to 118.01, 
+20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,Smarkets,Free (SNR),Lay,Buster Valentine,22.8,6.6,2,118.01,22.34,22.34,Lose,31.99,103.75,"Liability changed last minute to 118.01, 
                                         stake to 21.07, back bet won, profit=150-118.01",7979843
 21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,BetWay,Qualifying,Back,Levante,30.0,1.87,0,0.0,26.1,-1.07,Win,-1.07,102.68, ,7987409
 21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,29.53,1.92,2,27.17,28.94,-1.06,Lose,0.0,102.68, ,7987409

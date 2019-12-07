@@ -1,4 +1,4 @@
-"""Functions that were made during part 3 to calculate profit and keep track of balances
+"""Functions that were made during parts 3 and 4 to calculate profit and keep track of balances
    across various bookmakers accounts."""
 
 import pandas as pd
@@ -104,6 +104,54 @@ def bookie_balances(spreadsheet):
     """Returns the total balance for each bookmaker for all settled bets."""
     
     return add_series(qualifying_bet_balances(spreadsheet), free_bet_balances(spreadsheet))
+
+
+def smarkets_returns(spreadsheet):
+    """Returns the amount of money in my smarkets balance due to winning bets."""
+    
+    winning_smarkets_bets = (spreadsheet['Bookie'] == 'Smarkets')   \
+                               & (spreadsheet['Bet Result'] == 'Win')
+    
+    smarkets_returns = sum(spreadsheet[winning_smarkets_bets]['Return'])
+        
+    return smarkets_returns
+
+
+def smarkets_losses(spreadsheet):
+    """Returns the amount of money that is lost from smarkets balance due to 
+       losing bets."""
+    
+    losing_smarkets_bets = (spreadsheet['Bookie'] == 'Smarkets')   \
+                               & (spreadsheet['Bet Result'] == 'Lose')
+    
+    smarkets_losses = sum(spreadsheet[losing_smarkets_bets]['Liability'])
+    
+    return smarkets_losses
+
+
+def unsettled_liability(spreadsheet):
+    """Returns the amount of money removed from smarkets balance due to bets that 
+       have not yet settled."""
+    
+    unsettled_bets = (spreadsheet['Bookie'] == 'Smarkets')    \
+                         & (spreadsheet['Bet Result'] == 'Unsettled')
+    
+    liability = sum(spreadsheet[unsettled_bets]['Liability'])
+    
+    return liability
+
+
+def smarkets_balance(spreadsheet):
+    """Returns the current smarkets balance.
+    
+       Requires an input of total amount deposited to smarkets."""
+    
+    deposited = int(input("What is the total amount deposited? "))
+    
+    balance = deposited + smarkets_returns(spreadsheet)   \
+              - smarkets_losses(spreadsheet) - unsettled_liability(spreadsheet)
+    
+    return balance
 
 
 def value_index_list(series):
