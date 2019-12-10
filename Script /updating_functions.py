@@ -20,7 +20,7 @@ def new_individual_spreadsheet(old_spreadsheet, updated_individual_spreadsheet):
     first_new_bet = len(old_spreadsheet) - 4
     # 4 accounts for the missing bets that arent't in individual bet files
     
-    new_individual_bets = updated_individual_spreadsheet.loc[first_new_bet:, ]
+    new_individual_bets = updated_individual_spreadsheet.iloc[first_new_bet:, ]
     
     return new_individual_bets
 
@@ -38,10 +38,10 @@ def new_paired_spreadsheet(old_spreadsheet, updated_paired_spreadsheet):
     """Returns a spreadsheet of new paired bets that need to be added 
        to an old spreadsheet."""
     
-    first_new_bet = (len(old_spreadsheet) - 4) / 2
+    first_new_bet = (len(old_spreadsheet) - 4) // 2
     # 4 accounts for the missing bets that arent't in individual bet files
     
-    new_paired_bets = updated_paired_spreadsheet.loc[first_new_bet:, ]
+    new_paired_bets = updated_paired_spreadsheet.iloc[first_new_bet:, ]
     
     return new_paired_bets
 

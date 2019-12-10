@@ -147,8 +147,9 @@ def smarkets_balance(spreadsheet):
        Requires an input of total amount deposited to smarkets."""
     
     deposited = int(input("What is the total amount deposited? "))
-    
-    balance = deposited + smarkets_returns(spreadsheet)   \
+
+    # 10 accounts for £10 of losses being refunded
+    balance = 10 + deposited + smarkets_returns(spreadsheet)   \
               - smarkets_losses(spreadsheet) - unsettled_liability(spreadsheet)
     
     return balance
