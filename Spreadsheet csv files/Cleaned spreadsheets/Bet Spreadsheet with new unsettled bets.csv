@@ -1,26 +1,26 @@
 Date Created,Sport,Event,Event Time,Bookie,Bet Type,Type,Outcome,Stake,Odds,Fee (%),Liability,Return,Potential Profit,Bet Result,Profit,Running Profit,Note,Profit ID
-19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Betfred,Qualifying,Back,Leicester,10.0,2.05,0,0.0,10.5,-0.43,Lose,0.0,0.0, ,7967100
-19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Smarkets,Qualifying,Lay,Leicester,9.76,2.12,2,10.93,9.56,-0.44,Win,-0.44,-0.44, ,7967100
-19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Coral,Qualifying,Back,Rochdale,5.0,1.91,0,0.0,4.55,-0.1,Win,2.57,2.13,2.67 of losses from exchange refunded,7967200
-19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Smarkets,Qualifying,Lay,Rochdale,5.0,1.93,2,4.65,4.9,-0.1,Lose,0.0,2.13,2.67 of losses from exchange refunded,7967200
-19/11/2019 14:39:18 ,Football,Wales v Hungary,19/11/2019 19:45:00,Coral,Free (SNR),Back,Hungary,20.0,6.5,0,0.0,110.0,15.92,Lose,0.0,2.13, ,7967346
-19/11/2019 14:39:18 ,Football,Wales v Hungary,19/11/2019 19:45:00,Smarkets,Free (SNR),Lay,Hungary,16.22,6.8,2,94.08,15.9,15.9,Win,15.9,18.03, ,7967346
-19/11/2019 14:56:02 ,Football,North Macedonia v Israel,19/11/2019 19:45:00,Skybet,Qualifying,Back,North Macedonia,5.0,2.4,0,0.0,7.0,-0.33,Win,7.0,25.03,7.33 of losses from exchange refunded,7967454
-19/11/2019 14:56:02 ,Football,North Macedonia v Israel,19/11/2019 19:45:00,Smarkets,Qualifying,Lay,North Macedonia,4.76,2.54,2,7.33,4.66,-0.34,Lose,0.0,25.03,7.33 of losses from exchange refunded,7967454
-20/11/2019 14:13:10 ,Football,Lincoln v Ipswich,20/11/2019 19:45:00,Skybet,Free (SNR),Back,1-2,20.0,11.0,0,0.0,200.0,15.08,Lose,0.0,25.03, ,7975857
-20/11/2019 14:13:10 ,Football,Lincoln v Ipswich,20/11/2019 19:45:00,Smarkets,Free (SNR),Lay,1-2,15.41,13.0,2,184.92,15.1,15.1,Win,15.1,40.13, ,7975857
-20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,William Hill,Qualifying,Back,Levante,10.0,1.85,0,0.0,8.5,-0.36,Win,-0.36,39.77, ,7979780
-20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,9.84,1.9,2,8.86,9.64,-0.36,Lose,0.0,39.77, ,7979780
-20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,William Hill,Free (SNR),Back,Buster Valentine,30.0,6.0,0,0.0,150.0,22.32,Win,31.99,71.76,"Liability changed last minute to 118.01, 
+19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Betfred,Qualifying,Back,Leicester,10.0,2.05,0,0.0,10.5,-0.43,Win,-0.43,-0.43, ,7967100
+19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Smarkets,Qualifying,Lay,Leicester,9.76,2.12,2,10.93,9.56,-0.44,Lose,0.0,-0.43, ,7967100
+19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Coral,Qualifying,Back,Rochdale,5.0,1.91,0,0.0,4.55,-0.1,Win,2.57,2.14,2.67 of losses from exchange refunded,7967200
+19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Smarkets,Qualifying,Lay,Rochdale,5.0,1.93,2,4.65,4.9,-0.1,Lose,0.0,2.14,2.67 of losses from exchange refunded,7967200
+19/11/2019 14:39:18 ,Football,Wales v Hungary,19/11/2019 19:45:00,Coral,Free (SNR),Back,Hungary,20.0,6.5,0,0.0,110.0,15.92,Lose,0.0,2.14, ,7967346
+19/11/2019 14:39:18 ,Football,Wales v Hungary,19/11/2019 19:45:00,Smarkets,Free (SNR),Lay,Hungary,16.22,6.8,2,94.08,15.9,15.9,Win,15.9,18.04, ,7967346
+19/11/2019 14:56:02 ,Football,North Macedonia v Israel,19/11/2019 19:45:00,Skybet,Qualifying,Back,North Macedonia,5.0,2.4,0,0.0,7.0,-0.33,Win,7.0,25.04,7.33 of losses from exchange refunded,7967454
+19/11/2019 14:56:02 ,Football,North Macedonia v Israel,19/11/2019 19:45:00,Smarkets,Qualifying,Lay,North Macedonia,4.76,2.54,2,7.33,4.66,-0.34,Lose,0.0,25.04,7.33 of losses from exchange refunded,7967454
+20/11/2019 14:13:10 ,Football,Lincoln v Ipswich,20/11/2019 19:45:00,Skybet,Free (SNR),Back,1-2,20.0,11.0,0,0.0,200.0,15.08,Lose,0.0,25.04, ,7975857
+20/11/2019 14:13:10 ,Football,Lincoln v Ipswich,20/11/2019 19:45:00,Smarkets,Free (SNR),Lay,1-2,15.41,13.0,2,184.92,15.1,15.1,Win,15.1,40.14, ,7975857
+20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,William Hill,Qualifying,Back,Levante,10.0,1.85,0,0.0,8.5,-0.36,Win,-0.36,39.78, ,7979780
+20/11/2019 22:11:55 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,9.84,1.9,2,8.86,9.64,-0.36,Lose,0.0,39.78, ,7979780
+20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,William Hill,Free (SNR),Back,Buster Valentine,30.0,6.0,0,0.0,150.0,22.32,Win,31.99,71.77,"Liability changed last minute to 118.01, 
                                         stake to 21.07, back bet won, profit=150-118.01",7979843
-20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,Smarkets,Free (SNR),Lay,Buster Valentine,22.8,6.6,2,118.01,22.34,22.34,Lose,31.99,103.75,"Liability changed last minute to 118.01, 
+20/11/2019 22:20:56 ,Horse Racing,Market Rasen 14:05,21/11/2019 14:05:00,Smarkets,Free (SNR),Lay,Buster Valentine,22.8,6.6,2,118.01,22.34,22.34,Lose,31.99,103.76,"Liability changed last minute to 118.01, 
                                         stake to 21.07, back bet won, profit=150-118.01",7979843
-21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,BetWay,Qualifying,Back,Levante,30.0,1.87,0,0.0,26.1,-1.07,Win,-1.07,102.68, ,7987409
-21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,29.53,1.92,2,27.17,28.94,-1.06,Lose,0.0,102.68, ,7987409
-22/11/2019 22:16:02 ,Football,West Ham v Tottenham,23/11/2019 12:30:00,BetWay,Free (SNR),Back,Draw,30.0,4.2,0,0.0,96.0,21.47,Lose,0.0,102.68, ,7998004
-22/11/2019 22:16:02 ,Football,West Ham v Tottenham,23/11/2019 12:30:00,Smarkets,Free (SNR),Lay,Draw,21.92,4.4,2,74.53,21.48,21.48,Win,21.48,124.16, ,7998004
-24/11/2019 09:55:09 ,Football,Sheff Utd v Man Utd,24/11/2019 16:30:00,Betfred,Free (SNR),Back,1-1,30.0,6.5,0,0.0,165.0,21.32,Lose,0.0,124.16, ,8018379
-24/11/2019 09:55:09 ,Football,Sheff Utd v Man Utd,24/11/2019 16:30:00,Smarkets,Free (SNR),Lay,1-1,21.77,7.6,2,143.68,21.33,21.33,Win,21.33,145.49, ,8018379
+21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,BetWay,Qualifying,Back,Levante,30.0,1.87,0,0.0,26.1,-1.07,Win,-1.07,102.69, ,7987409
+21/11/2019 21:24:34 ,Football,Levante v Mallorca,22/11/2019 20:00:00,Smarkets,Qualifying,Lay,Levante,29.53,1.92,2,27.17,28.94,-1.06,Lose,0.0,102.69, ,7987409
+22/11/2019 22:16:02 ,Football,West Ham v Tottenham,23/11/2019 12:30:00,BetWay,Free (SNR),Back,Draw,30.0,4.2,0,0.0,96.0,21.47,Lose,0.0,102.69, ,7998004
+22/11/2019 22:16:02 ,Football,West Ham v Tottenham,23/11/2019 12:30:00,Smarkets,Free (SNR),Lay,Draw,21.92,4.4,2,74.53,21.48,21.48,Win,21.48,124.17, ,7998004
+24/11/2019 09:55:09 ,Football,Sheff Utd v Man Utd,24/11/2019 16:30:00,Betfred,Free (SNR),Back,1-1,30.0,6.5,0,0.0,165.0,21.32,Lose,0.0,124.17, ,8018379
+24/11/2019 09:55:09 ,Football,Sheff Utd v Man Utd,24/11/2019 16:30:00,Smarkets,Free (SNR),Lay,1-1,21.77,7.6,2,143.68,21.33,21.33,Win,21.33,145.5, ,8018379
 26/11/2019 16:48:22 ,Football,Barcelona v Dortmund,27/11/2019 20:00:00,Betfred,Free (SNR),Back,Dortmund,5.0,6.0,0,0.0,25.0,3.83,Unsettled,0.0,0.0, ,8046855
 26/11/2019 16:48:22 ,Football,Barcelona v Dortmund,27/11/2019 20:00:00,Smarkets,Free (SNR),Lay,Dortmund,3.92,6.4,2,21.17,3.84,3.84,Unsettled,0.0,0.0, ,8046855
 26/11/2019 17:13:28 ,Football,Galatasaray v Club Brugge,26/11/2019 17:55:00,Totesport,Qualifying,Back,Draw,25.0,3.6,0,0.0,65.0,-0.69,Unsettled,0.0,0.0, ,8047234

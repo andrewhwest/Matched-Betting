@@ -1,6 +1,6 @@
 Date Created,Sport,Event,Event Time,Bookie,Bet Type,Type,Outcome,Stake,Odds,Fee (%),Liability,Return,Potential Profit,Bet Result,Note,Profit ID
-19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Betfred,Qualifying,Back,Leicester,10.0,2.05,0,0.0,10.5,-0.43,Lose, ,7967100
-19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Smarkets,Qualifying,Lay,Leicester,9.76,2.12,2,10.93,9.56,-0.44,Win, ,7967100
+19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Betfred,Qualifying,Back,Leicester,10.0,2.05,0,0.0,10.5,-0.43,Win, ,7967100
+19/11/2019 13:48:04,Football,Brighton and Hove Albion v Leicester,23/11/2019 15:00:00,Smarkets,Qualifying,Lay,Leicester,9.76,2.12,2,10.93,9.56,-0.44,Lose, ,7967100
 19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Coral,Qualifying,Back,Rochdale,5.0,1.91,0,0.0,4.55,-0.1,Win, ,7967200
 19/11/2019 14:27:29,Football,Rochdale v Wrexham,19/11/2019 19:45:00,Smarkets,Qualifying,Lay,Rochdale,5.0,1.93,2,4.65,4.9,-0.1,Lose, ,7967200
 19/11/2019 14:39:18 ,Football,Wales v Hungary,19/11/2019 19:45:00,Coral,Free (SNR),Back,Hungary,20.0,6.5,0,0.0,110.0,15.92,Lose, ,7967346

@@ -19,8 +19,8 @@ bet_spreadsheet.iloc[:2, [0, 2, 3, 5, 7, 16]] = ['19/11/2019 13:48:04',
                                                  'Leicester', 7967100]
 
 # Change values that are specific to each bet
-bet_spreadsheet.iloc[0, [4, 8, 9, 12, 13]] = ['Betfred', 10.00, 2.05, 10.50, -0.43]
-bet_spreadsheet.iloc[1, [8, 9, 11, 12, 13]] = [9.76, 2.12, 10.93, 9.56, -0.44]
+bet_spreadsheet.iloc[0, [4, 8, 9, 12, 13, 14]] = ['Betfred', 10.00, 2.05, 10.50, -0.43, 'Win']
+bet_spreadsheet.iloc[1, [8, 9, 11, 12, 13, 14]] = [9.76, 2.12, 10.93, 9.56, -0.44, 'Lose']
 
 ## Add second pair of missing bets to rows 2 and 3
 

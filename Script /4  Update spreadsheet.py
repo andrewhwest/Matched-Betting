@@ -33,7 +33,7 @@ updated_paired_bets = pd.read_csv('Updated paired bets.csv')
 updated_paired_bets = remove_paired_bet(updated_paired_bets)
 
 # Spreadsheet of new paired bets
-new_paired_bets = new_paired_spreadsheet(new_individual_bets, updated_paired_bets)
+new_paired_bets = new_paired_spreadsheet(old_bet_spreadsheet, updated_paired_bets)
 
 
 ## Combine new paired and individual bets
@@ -73,6 +73,9 @@ bet_spreadsheet.loc[newly_settled_bets_list] = remove_negative_zeros(newly_settl
 
 # Check bookie balances for settled bets
 bookie_balances(bet_spreadsheet.loc[newly_settled_bets_list])
+
+# Check smarkets balances for settled bets
+smarkets_balance(bet_spreadsheet)
 
 # Recalculate running profit for whole spreadsheet
 bet_spreadsheet = recalculate_running_profit(bet_spreadsheet)
