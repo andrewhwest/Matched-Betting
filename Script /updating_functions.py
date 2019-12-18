@@ -38,9 +38,8 @@ def new_paired_spreadsheet(old_spreadsheet, updated_paired_spreadsheet):
     """Returns a spreadsheet of new paired bets that need to be added 
        to an old spreadsheet."""
     
-    first_new_bet = (len(old_spreadsheet) - 4) // 2
-    # 4 accounts for the missing bets that arent't in individual bet files
-    
+    # 2 accounts for the missing bets that arent't in individual/paired bet files
+    first_new_bet = old_spreadsheet['Profit ID'].nunique() - 2
     new_paired_bets = updated_paired_spreadsheet.iloc[first_new_bet:, ]
     
     return new_paired_bets
