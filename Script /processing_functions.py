@@ -139,7 +139,7 @@ def update_paired_results(spreadsheet, winning_indices_list):
     
     """
     
-    losing_indices_list = losing_pair_indices(spreadsheet, winning_indices_list)
+    losing_indices_list = losing_paired_indices(spreadsheet, winning_indices_list)
     
     spreadsheet.loc[winning_indices_list, 'Bet Result'] = "Win"
     spreadsheet.loc[losing_indices_list, 'Bet Result'] = "Lose"
