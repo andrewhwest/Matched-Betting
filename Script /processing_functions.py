@@ -120,3 +120,28 @@ def update_bet_results(spreadsheet, winning_indices_list):
     spreadsheet.loc[win_lose_tuple[1], "Bet Result"] = "Lose"
     
     return spreadsheet
+
+
+def losing_paired_indices(spreadsheet, winning_indices_list):
+    """Updates the spreadsheet with which bets won and lost.
+    
+    """
+    
+    profit_ids = list(spreadsheet.loc[winning_indices_list, 'Profit ID'])
+    win_lose_indices = list(spreadsheet[spreadsheet['Profit ID'].isin(profit_ids)].index)
+    lose_indices = [index for index in win_lose_indices if index not in winning_indices_list]
+    
+    return lose_indices
+
+
+def update_paired_results(spreadsheet, winning_indices_list):
+    """Updates the spreadsheet with which bets won and lost.
+    
+    """
+    
+    losing_indices_list = losing_pair_indices(spreadsheet, winning_indices_list)
+    
+    spreadsheet.loc[winning_indices_list, 'Bet Result'] = "Win"
+    spreadsheet.loc[losing_indices_list, 'Bet Result'] = "Lose"
+    
+    return spreadsheet
