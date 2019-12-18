@@ -1,4 +1,4 @@
-"""Functions that were made during parts 3 and 4 to calculate profit and keep track of balances
+"""Functions that were made during part 3 to calculate profit and keep track of balances
    across various bookmakers accounts."""
 
 import pandas as pd
@@ -48,32 +48,35 @@ def running_profit(spreadsheet):
 
 # Functions to calculate balances for each bookmaker
 
-def qualifying_bet_balances(spreadsheet):
+def SR_bet_balances(spreadsheet):
     """Returns a series with the balance for each bookie due to all 
-       settled qualifying bets."""
+       winning bets where the stake is returned."""
     
-    winning_qualifying_bets = (spreadsheet['Bet Type'] == 'Qualifying')   \
-                               & (spreadsheet['Bet Result'] == 'Win')
+    winning_SR_bets = ((spreadsheet['Bet Type'] == 'Qualifying')     \
+                       | (spreadsheet['Bet Type'] == 'Risk Free')     \
+                       | (spreadsheet['Bet Type'] == 'Acca Lay Seq'))  \
+                        & (spreadsheet['Bet Result'] == 'Win')
     
-    qualifying_by_bookie = spreadsheet[winning_qualifying_bets].groupby('Bookie') 
+    SR_by_bookie = spreadsheet[winning_SR_bets].groupby('Bookie') 
     
     # Our original stake is returned with qualifying bets
-    qualifying_balances = qualifying_by_bookie['Stake'].sum()   \
-                             + qualifying_by_bookie['Return'].sum()
+    SR_balances = SR_by_bookie['Stake'].sum()   \
+                             + SR_by_bookie['Return'].sum()
     
     # Smarkets balance will be calculated separately 
-    if 'Smarkets' in qualifying_balances.index:
-        qualifying_balances.drop('Smarkets', inplace=True)
+    if 'Smarkets' in SR_balances.index:
+        SR_balances.drop('Smarkets', inplace=True)
         
-    return qualifying_balances
+    return SR_balances
 
 
 def free_bet_balances(spreadsheet):
     """Returns a series with the balance for each bookie due to all 
-       settled free bets."""
+       winning bets where the stake is not returned."""
 
-    winning_free_bets = (spreadsheet['Bet Type'] == 'Free (SNR)') \
-                               & (spreadsheet['Bet Result'] == 'Win')
+    winning_free_bets = ((spreadsheet['Bet Type'] == 'Free (SNR)') \
+                         | (spreadsheet['Bet Type'] == 'Acca Lay Seq Free Bet'))  \
+                         & (spreadsheet['Bet Result'] == 'Win')
     
     free_by_bookie = spreadsheet[winning_free_bets].groupby('Bookie')
     
@@ -103,7 +106,7 @@ def add_series(series_1, series_2):
 def bookie_balances(spreadsheet):
     """Returns the total balance for each bookmaker for all settled bets."""
     
-    return add_series(qualifying_bet_balances(spreadsheet), free_bet_balances(spreadsheet))
+    return add_series(SR_bet_balances(spreadsheet), free_bet_balances(spreadsheet))
 
 
 def smarkets_returns(spreadsheet):
@@ -147,10 +150,10 @@ def smarkets_balance(spreadsheet):
        Requires an input of total amount deposited to smarkets."""
     
     deposited = int(input("What is the total amount deposited? "))
-
-    # 10 accounts for £10 of losses being refunded
-    balance = 10 + deposited + smarkets_returns(spreadsheet)   \
-              - smarkets_losses(spreadsheet) - unsettled_liability(spreadsheet)
+    
+    # 23 for accounts for a missing bet 
+    balance = deposited + smarkets_returns(spreadsheet)   \
+              - smarkets_losses(spreadsheet) - unsettled_liability(spreadsheet) - 23
     
     return balance
 
