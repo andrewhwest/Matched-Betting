@@ -38,8 +38,7 @@ Instead the main aims of this project are to:
 1. <s>Make a new spreadsheet from the two existing ones</s>
 2. <s>Add in some missing bets</s>  
 3. <s>Add profit features to spreadsheet</s>  
-4. <s>Update spreadsheet with new bets</s> 
-5. Try to automate as much as possible, several daily tasks that keep track of bets  
+4. <s>Update spreadsheet with new bets</s>   
 
 ## Technolgies used
 Python 3.7.4  
